@@ -1,4 +1,4 @@
-QT       += core gui sql network mqtt
+QT       += core gui sql network mqtt testlib
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,16 +19,17 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     mydialog.cpp \
-    user1.cpp
+    personalchat.cpp
 
 HEADERS += \
     mainwindow.h \
     mydialog.h \
-    user1.h
+    personalchat.h
 
 FORMS += \
     mainwindow.ui \
-    mydialog.ui
+    mydialog.ui \
+    personalchat.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
